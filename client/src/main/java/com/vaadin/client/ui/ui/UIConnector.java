@@ -216,8 +216,8 @@ public class UIConnector extends AbstractSingleComponentContainerConnector
             @Override
             public void onResize(ResizeEvent event) {
                 getRpcProxy(UIServerRpc.class).resize(event.getHeight(),
-                        event.getWidth(), Window.getClientWidth(),
-                        Window.getClientHeight());
+                        event.getWidth(), Window.getClientHeight(),
+                        Window.getClientWidth());
                 getConnection().getServerRpcQueue().flush();
             }
         });
